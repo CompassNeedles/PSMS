@@ -211,8 +211,8 @@ public class MultiSer {
 		int i = 0;
 		ArrayList<Pair<String, Date>> tempArray = userTopics.get(uID);
 		for ( ; i < tempArray.size(); ++i) {
-			if (tempArray.get(i).getFirst().equals(topic)) {/* Always enters block */
-				timeStamp = tempArray.get(i).getSecond();   /* Never or post-server-push */
+			if (tempArray.get(i).getFirst().equals(topic)) {  /* Always enters block */
+				timeStamp = tempArray.get(i).getSecond(); /* Never or post-server-push */
 				break;
 			}
 		}
